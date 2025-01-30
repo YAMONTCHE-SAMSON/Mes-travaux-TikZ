@@ -1,0 +1,15 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{animate}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{animateinline}[autoplay, loop]{10}
+    \multiframe{36}{rAngle=0+10}{ % Créer une animation avec 36 images
+        \begin{tikzpicture}
+            \draw[rotate around={\rAngle:(0,0)}] (0,0) circle (1);
+        \end{tikzpicture}
+    }
+\end{animateinline}
+
+\end{document}
